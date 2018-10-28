@@ -1,0 +1,65 @@
+body{
+background:#0078D7;
+  
+ text-align:center;
+}
+.menu-toggle {
+  position: fixed;
+  width: 70px;
+  height: 51px;
+  cursor: pointer;
+  z-index:1 ;
+  left:-35px;
+  margin-top:30px;
+  margin-left:50%;
+}
+.menu-toggle span {
+  width: 60%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+    transition:  .5s ;
+}
+.menu-toggle.active:hover span {
+  background-color: white;
+}
+.menu-toggle span:nth-child(1) {
+  top: 30%;
+}
+.menu-toggle span:nth-child(3) {
+  top: 70%;
+}
+.menu-toggle.active span:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(50deg) ;
+  top: 50%;
+  left: 50%;
+  width: 55%;
+  height: 3px;
+}
+.menu-toggle.active span:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-50deg) ;
+  top: 50%;
+  left: 50%;
+  width: 55%;
+  height: 3px;
+}
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  font-size:30px;
+
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+font-size:15px;
+    color:white;
+
+}
+
